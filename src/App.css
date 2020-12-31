@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+@font-face{
+  font-family: workSans;
+  src: url('../src/fonts/WorkSans-VariableFont_wght.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: workSans;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color: rgba(0,0,0,0.05);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.weather-info{
   display: flex;
-  flex-direction: column;
+  width: 55%;
+  height: auto;
+  justify-content: flex-start;
   align-items: center;
+  margin-left: 10%;
+}
+
+.weather-info .flex-row{
+  text-align: center;
+  margin: 0 15px
+}
+
+.flex{
+  display: flex;
+  width: auto;
+  height: auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.flex h1{
+  margin: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex h5{
+  font-style: italic;
 }
+
+.flex-form{
+  display: flex;
+  width: 50%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto;
+}
+
+#query{
+  width: 95%;
+  margin-right: 15px;
+  padding: 5px;
+  border: none;
+  border-radius: 6px 6px 0px 0px;
+  border-bottom: 2px dotted black;
+}
+
+#query:focus{
+  border: none;
+  outline: none;
+  border-radius: 6px 6px 0px 0px;
+  border-bottom: 2px dotted black;
+}
+
+#submit{
+  padding: 5px;
+  border: none;
+  border-radius: 6px;
+  border-bottom: 2px dotted black;
+  background-color: white;
+}
+
+#submit:hover{
+  cursor: pointer;
+}
+
+.card{
+  width: 80%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 6px;
+  margin: 15px auto;
+  padding: 15px;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.8);
+  background-color: white;
+}
+
+.card h2, .card p{
+  margin: 10px auto;
+}
+
+.flex-btn{
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#read-more{
+  text-decoration: none;
+  color: black;
+  transition: color 0.8s ease-in;
+}
+
+#read-more:hover{
+  color: pink;
+}
+
+
+
+
+
